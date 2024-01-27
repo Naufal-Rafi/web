@@ -1,0 +1,77 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css">
+    
+   <div class="w3w-cointainer w3-black">
+    <div class="w3-container">
+        <center>
+        <img src="css/LamboLogo.jpg" width=65%>
+    </div>
+    
+
+        <div class="w3-bar w3-amber">
+            <button class="w3-bar-item w3-button" onclick="openKota('home')">Home</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Revuelto')">Revuelto</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('AventadorSV')">Aventador SV</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('AventadorLP-780-4Ultimae')">Aventador LP-780-4 Ultimae</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+        </div>
+
+        <div id="home" class="w3-container kota w3-animate-top" style="display:inside">
+            <center>
+            <h1>Welcome</h1>
+                <p>Disini kita akan bahas mengenai top model untuk mobil Lamborghini menurut saya</p>
+                <p>1. Lamborghini Revuelto</p>
+                <p>2. Lamborghini Aventador SV</p>
+                <p>3. Lamborghini Aventador LP-780-4 Ultimae</p>
+        </div>
+
+        <div id="Revuelto" class="w3-container kota w3-animate-bottom" style="display:none">
+            <center>
+                <h1>Lamborghini Revuelto</h1>
+                <img src="css/revuelto.jpg" width="50%">
+                <p>Just before the 60th anniversary of the marque, Lamborghini unveiled Revuelto, the first HPEV (High Performance Electrified Vehicle) hybrid super sports car. With the Revuelto, Lamborghini has established a new benchmark in performance, on-board technology, and driving pleasure. The ultimate thrill provided by the Revuelto is reached thanks to a powertrain that delivers 1015 CV total, combining the power of a brand-new 12-cylinder internal combustion engine with three high-density electric motors and a groundbreaking transversal dual clutch e-gearbox. The power of hybridization is harnessed to take performance and driving emotions to an unprecedented level.
+
+                </p>
+        </div>
+
+        <div id="AventadorSV" class="w3-container kota w3-animate-fading" style="display:none">
+            <center>
+                <h1>Lamborghini Aventador SV</h1>
+                <img src="css/aventador.webp" width="50%">
+                <p>The groundbreaking innovations we introduced with the Aventador marked the beginning of a new era for super sports cars. With the Aventador SV Coupé we have completely redefined the concept.
+                    The Superveloce has been designed as the sportiest Lamborghini ever, thanks to a further improved naturally aspirated V12 engine, engineering solutions geared to extreme lightness, and a mix of innovative technological features, such as the magnetorheological push-rod suspension and the Lamborghini Dynamic Steering system.
+                    Every element of the SV has been developed following the “Design to Weight” concept, with the lowest possible weight and highest possible performance, to make it the fastest and most exciting Lamborghini of all time.
+                    A super sports car in its purest form. Here are all the features and the technical specifications for the Lamborghini Aventador Superveloce Coupé.</p>
+        </div>
+        
+        <div id="AventadorLP-780-4Ultimae" class="w3-container kota w3-animate-right" style="display:none">
+            <center>
+                <h1>Lamborghini Aventador LP-780-4 Ultimae</h1>
+                <img src="css/LP-780.jpg" width="50%">
+                <p>The latest version of Aventador is not only powerful, it is the most powerful Aventador ever made. With the highest-performing standard-production naturally aspirated V12 engine in Lamborghini history, it incorporates advanced technological solutions and unparalleled design. This gem, to be produced in only 350 units, is the final—and greatest—expression of a family of super sports cars that has left its mark on the last decade.
+                </p>
+        </div>
+
+        <div id="Profile" class="w3-container kota w3-animate-left" style="display:none">
+            <center>
+                <h1>Profile</h1>
+                <img src="css/pap.jpeg" width="20%">
+                    <p>Nama    : Naufal Rafi</p>
+                    <p>Kelas   : IF-5 </p>
+                    <p>Jurusan : Teknik Informatika</p>
+
+        </div>
+    </div>
+    <script>
+    function openKota(namakota) {
+    var i;
+    var x = document.getElementsByClassName("kota");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+    }
+    document.getElementById(namakota).style.display = "block"; 
+    }
+    </script>
+</body>
+</html>
